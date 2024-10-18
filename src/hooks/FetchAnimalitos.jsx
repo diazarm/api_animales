@@ -10,7 +10,7 @@ export const FetchAnimalitos = () => {
         const getData = async() => {
             try {
                 const dataAnimales = await fetchApiAdopcion(); // Llama API de adopción
-                console.log("aaaaaaaaaaaaaaaa", dataAnimales)
+                
                 setAnimales(dataAnimales.data);
             } catch (err) {
                 setError(err);
